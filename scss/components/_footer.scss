@@ -1,0 +1,150 @@
+/* _footer.scss */
+
+.footer {
+  padding: 30px 0;
+  color: #fff;
+  fill: #fff;
+  background: #333;
+  
+  &__wrapper {
+
+    @media (min-width: $breakpoint_md) {
+      max-width: $breakpoint_md;
+    }
+
+    @media (min-width: $breakpoint_lg) {
+      max-width: $breakpoint_lg;
+    }
+
+    @media (min-width: $breakpoint_xl) {
+      max-width: $breakpoint_xl;
+    }
+  }
+
+  &__columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); // колонки и 
+    gap: 30px; // отступы 
+
+    @media (min-width: $breakpoint_md) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); // колонки и 
+      gap: 30px;
+    }
+
+    @media (min-width: $breakpoint_lg) {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr); // колонки и 
+      gap: 30px;
+    }
+  }
+
+  // &__column {}
+
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+
+    @media (min-width: $breakpoint_lg) {
+      font-size: 20px;
+    }
+
+    @media (min-width: $breakpoint_xl) {
+      font-size: 20px;
+    }
+  }
+
+  &__list {
+    margin-top: 20px;
+  }
+
+  &__item {
+    margin-top: 10px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
+    a {
+      @media (min-width: $breakpoint_lg) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__info {
+    margin-top: 30px;
+
+    @media (min-width: $breakpoint_md) {
+      // display: grid;
+      // grid-template-columns: repeat(2, 1fr);
+      // grid-auto-flow: dense;
+      // gap: 30px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $breakpoint_xl) {
+      margin-top: 50px;
+    }
+  }
+
+  &__body {
+    @media (min-width: $breakpoint_md) {
+      // width: 500px;
+    }
+
+    @media (min-width: $breakpoint_md) {
+      // width: 650px;
+    }
+  }
+
+  // &__logo {}
+
+  &__copy {
+    margin-top: 10px;
+
+    @media (min-width: $breakpoint_lg) {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    @media (min-width: $breakpoint_xl) {
+      margin-top: 10px;
+
+      &:first-of-type {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__image {
+    @media (min-width: $breakpoint_md) {
+      margin-left: 30px;
+    }
+  }
+
+  &__copyright {
+    margin-top: 10px;
+    height: 50px;
+    width: 130px;
+    display: block;
+    text-align: center;
+
+    @media (min-width: $breakpoint_md) {
+      margin-top: 0;
+      height: 100%;
+      width: 160px;
+      text-align: start;
+    }
+
+    img {
+      width: 100%; 
+    }
+  }
+}

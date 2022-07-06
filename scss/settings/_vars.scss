@@ -1,0 +1,23 @@
+/* _vars.scss */
+
+// fonts:
+$font_family: 'Nunito', sans-serif;
+
+// breakpoints:
+$breakpoint_md: 768px;
+$breakpoint_lg: 1150px;
+$breakpoint_xl: 1440px;
+
+// max-widths:
+$max_widht_md: 690px;
+$max_widht_lg: 930px;
+$max_widht_xl: 1110px;
+
+// heigths:
+$heigth_header_xs: 50px;
+$heigth_header_lg: 80px;
+
+// z-indexs:
+$z-index_header: 1;
+$z-index_progress-bar: 2;
+$z-index_modal: 3;

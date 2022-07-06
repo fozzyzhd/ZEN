@@ -1,0 +1,101 @@
+/* _care.scss */
+
+.care {
+  padding: 30px 0;
+  background: inherit;
+
+  &__wrapper {
+    @media (min-width: $breakpoint_md) {
+      max-width: $breakpoint_md;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    @media (min-width: $breakpoint_lg) {
+      max-width: $breakpoint_lg;
+    }
+
+    @media (min-width: $breakpoint_xl) {
+      max-width: $breakpoint_xl;
+    }
+  }
+
+  &__body {
+    @media (min-width: $breakpoint_md) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 150%;
+    color: currentColor;
+    margin-bottom: 10px;
+
+    @media (min-width: $breakpoint_md) {
+      font-size: 30px;
+    }
+
+    @media (min-width: $breakpoint_lg) {
+     font-style: 34px;
+    }
+
+    @media (min-width: $breakpoint_xl) {
+     font-style: 40px;
+    }
+  }
+
+  &__copy {
+    margin-top: 10px;
+
+    &:first-of-type {
+      margin-top: 20px;
+    }
+
+    @media (min-width: $breakpoint_lg) {
+     font-size: 18px;
+     line-height: 150%;
+    } 
+
+    @media (min-width: $breakpoint_xl) {
+      margin-top: 20px;
+      font-size: 20px;
+      line-height: 150%;
+
+      &:first-of-type {
+        margin-top: 30px;
+      }
+    }
+  } 
+
+  &__image {
+    margin-top: 30px;
+    height: 72vw;
+    border: 1px solid #AAA;
+    border-radius: 20px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (min-width: $breakpoint_md) {
+      margin-top: 0;
+      height: 260px;
+    }
+
+    @media (min-width: $breakpoint_lg) {
+      height: 350px;
+    }
+
+    @media (min-width: $breakpoint_xl) {
+      height: 400px;
+    }
+  } 
+}

@@ -1,0 +1,14 @@
+/* _progress-bar.scss */
+
+.progress-bar {
+  position: fixed;
+  top: $heigth_header_xs;
+  width: 100%;
+  height: 2px;
+  background: #00BEFF;
+  z-index: $z-index_progress-bar;
+
+  @media (min-width: $breakpoint_lg) {
+    top: $heigth_header_lg - 2px;
+  }
+}
